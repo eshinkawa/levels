@@ -4,14 +4,12 @@ import React from "react";
 import useFetchCountries from "../../hooks/useFetchCountries";
 import Main from "../index";
 
-// Mock the useFetchCountries hook
 jest.mock("../../hooks/useFetchCountries");
 
 const mockUseFetchCountries = useFetchCountries as jest.Mock;
 
 describe("Main Component", () => {
   beforeEach(() => {
-    // Reset mock before each test
     mockUseFetchCountries.mockReset();
   });
 
@@ -33,9 +31,6 @@ describe("Main Component", () => {
     act(() => {
       fireEvent.changeText(searchInput, "Canada");
     });
-
-    // Add expectations for how the component should behave when text is entered
-    // This may include checking if useFetchCountries was called with the new search term
   });
 
   it("displays countries returned by useFetchCountries hook", () => {
@@ -57,8 +52,5 @@ describe("Main Component", () => {
     const { getByText } = render(<Main />);
 
     expect(getByText("Canada")).toBeTruthy();
-    // Add more assertions as needed based on the country data
   });
-
-  // Add more tests for different scenarios
 });
