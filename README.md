@@ -1,7 +1,9 @@
 
+https://github.com/eshinkawa/levels/assets/8547776/bce71ac8-c6ca-4881-bad4-3cd86a53291b
+
 # 🌍 Levels FYI Project
 
-RestCountry Explorer is a React Native application 📱 that allows users to search and view details of countries using the REST Countries API. This app is built using React Native, React Native Maps, Expo, and Jest for testing. It showcases country information in a clean and user-friendly interface, providing data like population, capital, region, languages, and more.
+LFP is a React Native application 📱 that allows users to search and view details of countries using the REST Countries API. This app is built using React Native, React Native Maps, Expo, and Jest for testing. It showcases country information in a clean and user-friendly interface, providing data like population, capital, region, languages, and more.
 
 ## Technologies Used 🛠️
 
